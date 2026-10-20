@@ -1,0 +1,23 @@
+{
+  "name": "buildbid",
+  "version": "1.0.0",
+  "description": "BuildBid — AI-enabled construction planning, cost estimation & contractor bidding platform (Team InfraNexus, SIH 2026)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:init": "node scripts/init-db.js",
+    "db:reset": "node scripts/init-db.js --reset",
+    "test": "node scripts/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "keywords": ["construction", "cost-estimation", "bidding", "sih2026"],
+  "author": "Team InfraNexus",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql2": "^3.11.0"
+  }
+}

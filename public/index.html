@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuildBid — Plan, Estimate, Bid & Build</title>
+  <meta name="description" content="AI-enabled construction planning, cost estimation and contractor bidding platform.">
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#/" class="brand" aria-label="BuildBid home">
+        <img src="/img/logo.svg" alt="" width="30" height="30">
+        <span>Build<b>Bid</b></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#/estimate" data-nav="estimate">Estimate</a>
+        <a href="#/projects" data-nav="projects">Projects</a>
+        <a href="#/professionals" data-nav="professionals">Professionals</a>
+        <a href="#/materials" data-nav="materials">Materials</a>
+        <a href="#/tenders" data-nav="tenders">Tenders</a>
+      </nav>
+      <div class="nav-right" id="navRight"></div>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"><div class="loading">Loading…</div></main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span><b>BuildBid</b> · One platform. End-to-end. Smarter decisions.</span>
+      <span>Team InfraNexus · Smart India Hackathon 2026 · Smart Automation</span>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true"></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="/js/core.js"></script>
+  <script src="/js/building.js"></script>
+  <script src="/js/views-home.js"></script>
+  <script src="/js/views-estimate.js"></script>
+  <script src="/js/views-projects.js"></script>
+  <script src="/js/views-workspace.js"></script>
+  <script src="/js/views-market.js"></script>
+  <script src="/js/views-account.js"></script>
+  <script>BB.start();</script>
+</body>
+</html>
